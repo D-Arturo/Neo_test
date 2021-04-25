@@ -1,4 +1,69 @@
 // TODO: Desarrollar el CSS para el slider
+.container-slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
 .slider {
+    display: flex;
+    width: 400%;
+    height: 45vw;
+    margin-left: -100%;
+    &__section {
+        width: 100%;
+        position: relative;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__button{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index:99;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__content {
+        position: absolute;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        color: var(--white);
+        transform: translate(-50%, -50%);
+    }
+    &__title {        
+        padding:3%;
+        text-transform: capitalize;
+        width: 53vw;        
+        font-family: var(--titles-font);
+        font-size: 3vw;
+        z-index:99;
+        background-color: var(--orange);       
+        color: var(--white)
+    }
+    &__button--left {
+        left: 10px;
+    }
+    &__button--right {
+        right: 10px;
+    }
 
 }
+
+
+
+
+
+

@@ -1,6 +1,56 @@
 // TODO: Desarrollar el CSS para los productos
-.products {
 
+.products {
+    margin: 1vw 3vw;
+}
+.products-title {
+    text-align: center;
+    font-family: var(--title-font);
+    font-size:xx-large ;
+}
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+        width: 100%;
+        height: 25vw;
+        object-fit: cover;
+    }
+    &__description {
+        display: flex;    
+        font-family: var(--body-font);
+        font-size: 2vw;
+        justify-content: space-between;
+    }
+    &__price {
+        background-color: var(--orange);
+        font-weight: bold;
+        padding: 0.5vw 2vw;
+        margin: auto;
+        font-size: 2vw;
+        transform: rotate(-30deg);
+    }
+}
+
+
+.product--double {
+    grid-column: span 2;
+    object-fit: cover;
+    object-position: bottom;
+    
+}
+
+.product__img--double {
+    height: 25vw;
+    width: 100%;
+    object-fit: none;
 }
 
 .load {
