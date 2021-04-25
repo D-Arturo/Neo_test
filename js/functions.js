@@ -2,6 +2,8 @@
  * TODO: Desarrollar el código del slider
  */
 
+// Tuve problemas con el elemento insertAdjacentElement a la hora de cargar el contenido mediante el fetch, por lo que he dejado el código comentado y he hardcodeado la data del slider.
+
 // let slide = document.querySelector('#slider');
 
 // function getData() {
